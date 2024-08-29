@@ -17,11 +17,11 @@ const toggleMenu = () => {
           <h1 class="text-3xl mb-2">All in One</h1>
           <p class="text-lg">Todos seus relatórios em um lugar só</p>
           <nav class="relative bg-gray-300 mt-10 mx-auto w-full max-w-lg">
-            <label @click="toggleMenu" class="block py-5 bg-gray-800 text-white text-xl font-semibold cursor-pointer">
-              <span class="inline-block pr-2">REGISTRO DE VENDAS</span>
-              <span class="float-right text-2xl">+</span>
+            <label @click="toggleMenu" class="block py-5 px-5 bg-gray-800 text-white text-xl font-semibold cursor-pointer">
+              <span class="inline-block px-0">REGISTRO DE VENDAS</span>
+              <span class="float-right inline-block">+</span>
             </label>
-            <ul :class="{'h-48': isMenuOpen, 'h-0': !isMenuOpen}" class="absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none bg-gray-200">
+            <ul :class="{'h-[120px]': isMenuOpen, 'h-0' : !isMenuOpen}" class="absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none bg-gray-200">
               <li class="bg-gray-300 py-2">
                 <router-link to="/registro-estoque" class="text-black">REGISTRO DE ESTOQUE</router-link>
               </li>
