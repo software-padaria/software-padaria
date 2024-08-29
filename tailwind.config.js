@@ -3,7 +3,14 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'
 ],
   theme: {
-    extend: {},
+    extend: {
+      width:{
+        'duzz': '200px'
+      },
+      height:{
+        "10vh": "10vh"
+      }
+    },
   },
   plugins: [],
 }

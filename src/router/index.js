@@ -1,13 +1,26 @@
+import Vendas1view from '@/views/vendas1view.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
+      path:'/',
+      name:'vendas1',
+      component: () => import('../views/vendas1view.vue')
+
     },
+
+    {
+      path: '/vendas2',
+      name: 'vendas2',
+      component: () => import('../views/vendas2view.vue')
+    },
+    {
+      path: '/vendas3',
+      name: 'vendas3',
+      component: () => import('../views/vendas3view.vue')
+    }
     
 
   ]
