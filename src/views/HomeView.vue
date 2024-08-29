@@ -42,13 +42,38 @@ import { RouterLink } from 'vue-router'
         </header>
 
         <body>
-                <div class="bg-color3 min-h-screen">
-
+                <div class="bg-color4 w-full h-screen flex flex-col">
+                        <div class="w-full h-48 flex flex-col justify-center  pl-10 ">
+                                <div class="flex">
+                                        <h1 class="text-5xl text-white ">SANTO PÃO - PADARIA</h1>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                                viewBox="0,0,256,256">
+                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                        stroke-linecap="butt" stroke-linejoin="miter"
+                                                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                                        font-family="none" font-weight="none" font-size="none"
+                                                        text-anchor="none" style="mix-blend-mode: normal">
+                                                        <g transform="scale(2,2)">
+                                                                <path
+                                                                        d="M64,6c-32,0 -58,26 -58,58c0,32 26,58 58,58c32,0 58,-26 58,-58c0,-32 -26,-58 -58,-58zM64,12c28.7,0 52,23.3 52,52c0,28.7 -23.3,52 -52,52c-28.7,0 -52,-23.3 -52,-52c0,-28.7 23.3,-52 52,-52zM64,30c-4.97056,0 -9,4.02944 -9,9c0,4.97056 4.02944,9 9,9c4.97056,0 9,-4.02944 9,-9c0,-4.97056 -4.02944,-9 -9,-9zM64,59c-5,0 -9,4 -9,9v24c0,5 4,9 9,9c5,0 9,-4 9,-9v-24c0,-5 -4,-9 -9,-9z">
+                                                                </path>
+                                                        </g>
+                                                </g>
+                                        </svg>
+                                </div>
+                                <div class="">
+                                        <p class="font-medium text-white">CNPJ: 123456789</p>
+                                </div>
+                        </div>
                 </div>
+
+
         </body>
         <footer></footer>
 </template>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
 .searchIcon {
         margin-left: -65px;
 }
