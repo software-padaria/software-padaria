@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router'
                         <h1 class="text-4xl font-bold text-color2">UP</h1>
                         <img src="../assets/icons8-layers-48.png" width="43" alt="">
                         <input type="text" placeholder="SEARCH FOR..."
-                                class="bg-white text-color2 border border-color2 rounded-sm py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                                class="bg-white text-color2 border border-color2 rounded-md py-2 px-4 mx-20 focus:outline-none focus:ring-2 focus:ring-indigo-500"  />
                 </div>
         </header>
 
