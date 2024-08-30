@@ -36,7 +36,7 @@ const toggleMenu = () => {
           </nav>
         </div>
       </section>
-      <section class="bg-gray-800 p-5 rounded-lg mx-auto max-w-screen-lg">
+      <section class="bg-color4 p-5 rounded-lg mx-auto max-w-screen-lg">
         <input type="text" placeholder="Search Register..."
           class="block mx-auto mb-5 w-full max-w-xs bg-white border-none rounded-lg p-3 text-white text-lg" />
         <table class="w-full border-collapse mx-auto">
@@ -52,20 +52,20 @@ const toggleMenu = () => {
           </thead>
           <tbody>
             <tr>
-              <td class="p-2 border-b border-gray-700">16/02/2024</td>
-              <td class="p-2 border-b border-gray-700">16:24</td>
-              <td class="p-2 border-b border-gray-700">William</td>
-              <td class="p-2 border-b border-gray-700">
+              <td class="border p-2">16/02/2024</td>
+              <td class="border p-2">16:24</td>
+              <td class="border p-2">William</td>
+              <td class="border p-2">
                 <div class="flex items-center gap-2 mb-1">
                   <div class="overflow-x-auto">
                     <table class="w-auto text-sm">
                       <thead>
                         <tr>
-                          <th class="p-2 border-b border-gray-700">QUANT.</th>
-                          <th class="p-2 border-b border-gray-700">Item/Descrição</th>
-                          <th class="p-2 border-b border-gray-700">Valor Uni.</th>
-                          <th class="p-2 border-b border-gray-700">Desc.</th>
-                          <th class="p-2 border-b border-gray-700">Valor Total</th>
+                          <th class="p-2 border">QUANT.</th>
+                          <th class="p-2 border">Item/Descrição</th>
+                          <th class="p-2 border">Valor Uni.</th>
+                          <th class="p-2 border">Desc.</th>
+                          <th class="p-2 border">Valor Total</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -95,26 +95,26 @@ const toggleMenu = () => {
                   </div>
                 </div>
               </td>
-              <td class="p-2 border-b border-gray-700">Lucas</td>
-              <td class="p-2 border-b border-gray-700">R$41,50</td>
+              <td class="p-2 border">Lucas</td>
+              <td class="p-2 border">R$41,50</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
-              <td class="p-2 border-b border-gray-700">16/02/2024</td>
-              <td class="p-2 border-b border-gray-700">19:00</td>
-              <td class="p-2 border-b border-gray-700">Matheus</td>
-              <td class="p-2 border-b border-gray-700">
+              <td class="p-2 border">16/02/2024</td>
+              <td class="p-2 border">19:00</td>
+              <td class="p-2 border">Matheus</td>
+              <td class="p-2 border">
                 <div class="flex items-center gap-2 mb-1">
                   <div class="overflow-x-auto">
                     <table class="w-auto text-sm">
                       <thead>
                         <tr>
-                          <th class="p-2 border-b border-gray-700">QUANT.</th>
-                          <th class="p-2 border-b border-gray-700">Item/Descrição</th>
-                          <th class="p-2 border-b border-gray-700">Valor Uni.</th>
-                          <th class="p-2 border-b border-gray-700">Desc.</th>
-                          <th class="p-2 border-b border-gray-700">Valor Total</th>
+                          <th class="p-2 border">QUANT.</th>
+                          <th class="p-2 border">Item/Descrição</th>
+                          <th class="p-2 border">Valor Uni.</th>
+                          <th class="p-2 border">Desc.</th>
+                          <th class="p-2 border">Valor Total</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -144,26 +144,26 @@ const toggleMenu = () => {
                   </div>
                 </div>
               </td>
-              <td class="p-2 border-b border-gray-700">João Guilherme</td>
-              <td class="p-2 border-b border-gray-700">R$41,50</td>
+              <td class="p-2 border">João Guilherme</td>
+              <td class="p-2 border">R$41,50</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
-              <td class="p-2 border-b border-gray-700">16/02/2024</td>
-              <td class="p-2 border-b border-gray-700">19:45</td>
-              <td class="p-2 border-b border-gray-700">Leila</td>
-              <td class="p-2 border-b border-gray-700">
+              <td class="p-2 border">16/02/2024</td>
+              <td class="p-2 border">19:45</td>
+              <td class="p-2 border">Leila</td>
+              <td class="p-2 border">
                 <div class="flex items-center gap-2 mb-1">
                   <div class="overflow-x-auto">
                     <table class="w-auto text-sm">
                       <thead>
                         <tr>
-                          <th class="p-2 border-b border-gray-700">QUANT.</th>
-                          <th class="p-2 border-b border-gray-700">Item/Descrição</th>
-                          <th class="p-2 border-b border-gray-700">Valor Uni.</th>
-                          <th class="p-2 border-b border-gray-700">Desc.</th>
-                          <th class="p-2 border-b border-gray-700">Valor Total</th>
+                          <th class="p-2 border">QUANT.</th>
+                          <th class="p-2 border">Item/Descrição</th>
+                          <th class="p-2 border">Valor Uni.</th>
+                          <th class="p-2 border">Desc.</th>
+                          <th class="p-2 border">Valor Total</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -193,26 +193,26 @@ const toggleMenu = () => {
                   </div>
                 </div>
               </td>
-              <td class="p-2 border-b border-gray-700">Lucas</td>
-              <td class="p-2 border-b border-gray-700">R$41,50</td>
+              <td class="p-2 border">Lucas</td>
+              <td class="p-2 border">R$41,50</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
-              <td class="p-2 border-b border-gray-700">16/02/2024</td>
-              <td class="p-2 border-b border-gray-700">20:06</td>
-              <td class="p-2 border-b border-gray-700">Luan</td>
-              <td class="p-2 border-b border-gray-700">
+              <td class="p-2 border">16/02/2024</td>
+              <td class="p-2 border">20:06</td>
+              <td class="p-2 border">Luan</td>
+              <td class="p-2 border">
                 <div class="flex items-center gap-2 mb-1">
                   <div class="overflow-x-auto">
                     <table class="w-auto text-sm">
                       <thead>
                         <tr>
-                          <th class="p-2 border-b border-gray-700">QUANT.</th>
-                          <th class="p-2 border-b border-gray-700">Item/Descrição</th>
-                          <th class="p-2 border-b border-gray-700">Valor Uni.</th>
-                          <th class="p-2 border-b border-gray-700">Desc.</th>
-                          <th class="p-2 border-b border-gray-700">Valor Total</th>
+                          <th class="p-2 border">QUANT.</th>
+                          <th class="p-2 border">Item/Descrição</th>
+                          <th class="p-2 border">Valor Uni.</th>
+                          <th class="p-2 border">Desc.</th>
+                          <th class="p-2 border">Valor Total</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -242,8 +242,8 @@ const toggleMenu = () => {
                   </div>
                 </div>
               </td>
-              <td class="p-2 border-b border-gray-700">João Guilherme</td>
-              <td class="p-2 border-b border-gray-700">R$41,50</td>
+              <td class="p-2 border">João Guilherme</td>
+              <td class="p-2 border">R$41,50</td>
             </tr>
           </tbody>
         </table>

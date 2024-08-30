@@ -24,7 +24,7 @@ const toggleMenu = () => {
             <ul :class="{ 'h-[120px]': isMenuOpen, 'h-0': !isMenuOpen }"
               class="bg-white absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none">
               <li class="py-2">
-                <router-link to="/RegistroVendas" class="text-black">REGISTRO DE VENDAS</router-link>
+                <router-link to="/" class="text-black">REGISTRO DE VENDAS</router-link>
               </li>
               <li class="py-2">
                 <router-link to="/RegistroConsumo" class="text-black">REGISTRO DE CONSUMO</router-link>
