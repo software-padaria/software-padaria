@@ -10,46 +10,44 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="font-sans bg-gray-900 text-white flex flex-col min-h-screen">
+  <div class="font-sans bg-color4 text-white flex flex-col min-h-screen">
     <main class="p-5">
       <section class="relative bg-cover bg-center h-72 mb-5 mx-auto max-w-screen-lg">
         <div class="absolute bottom-5 left-5 text-white">
-          <h1 class="text-3xl mb-2">All in One</h1>
-          <p class="text-lg">Todos seus relatórios em um lugar só</p>
-          <nav class="relative bg-gray-300 mt-10 mx-auto w-full max-w-lg">
-            <label @click="toggleMenu" class="block py-5 px-5 bg-gray-800 text-white text-xl font-semibold cursor-pointer">
+          <h1 class="text-6xl mb-2">All in One</h1>
+          <p class="text-2xl">Todos seus relatórios em um lugar só</p>
+          <nav class="relative bg-white mt-10 mx-auto w-full max-w-lg">
+            <label @click="toggleMenu" class="block py-3 px-5 text-black text-xl font-semibold cursor-pointer">
               <span class="inline-block px-0">REGISTRO DE VENDAS</span>
               <span class="float-right inline-block">+</span>
             </label>
-            <ul :class="{'h-[120px]': isMenuOpen, 'h-0' : !isMenuOpen}" class="absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none bg-gray-200">
-              <li class="bg-gray-300 py-2">
-                <router-link to="/registro-estoque" class="text-black">REGISTRO DE ESTOQUE</router-link>
+            <ul :class="{ 'h-[120px]': isMenuOpen, 'h-0': !isMenuOpen }"
+              class="bg-white absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none">
+              <li class="py-2">
+                <router-link to="/RegistroEstoque" class="text-black">REGISTRO DE ESTOQUE</router-link>
               </li>
-              <li class="bg-gray-300 py-2">
-                <router-link to="/registro-consumo" class="text-black">REGISTRO DE CONSUMO</router-link>
+              <li class="py-2">
+                <router-link to="/RegistroConsumo" class="text-black">REGISTRO DE CONSUMO</router-link>
               </li>
-              <li class="bg-gray-300 py-2">
-                <router-link to="/registro-clientes" class="text-black">REGISTRO DE CLIENTES</router-link>
+              <li class="py-2">
+                <router-link to="/RegistroClientes" class="text-black">REGISTRO DE CLIENTES</router-link>
               </li>
             </ul>
           </nav>
         </div>
       </section>
       <section class="bg-gray-800 p-5 rounded-lg mx-auto max-w-screen-lg">
-        <input
-          type="text"
-          placeholder="Search Register..."
-          class="block mx-auto mb-5 w-full max-w-xs bg-gray-700 border-none rounded-lg p-3 text-white text-lg"
-        />
+        <input type="text" placeholder="Search Register..."
+          class="block mx-auto mb-5 w-full max-w-xs bg-white border-none rounded-lg p-3 text-white text-lg" />
         <table class="w-full border-collapse mx-auto">
           <thead>
             <tr>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Data</th>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Hora</th>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Cliente</th>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Produtos</th>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Vendedor</th>
-              <th class="p-2 text-left border-b border-gray-700 bg-gray-700">Valor Total</th>
+              <th class="p-2 text-left">Data</th>
+              <th class="p-2 text-left">Hora</th>
+              <th class="p-2 text-left">Cliente</th>
+              <th class="p-2 text-left">Produtos</th>
+              <th class="p-2 text-left">Vendedor</th>
+              <th class="p-2 text-left">Valor Total</th>
             </tr>
           </thead>
           <tbody>
