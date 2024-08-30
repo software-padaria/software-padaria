@@ -9,7 +9,8 @@ export default {
       'color4': '#262626'
     },
     textColor: {
-      'color2': '#8C8C8C'
+      'color2': '#8C8C8C',
+      'color5': '#262626'
     }
   },
   },
