@@ -146,7 +146,7 @@ onUnmounted(() => {
       </div>
       <div class="flex justify-center items-center ">
         <div class="flex ">
-          <InicialBox></InicialBox>
+          <InicialBox title="VENDAS"></InicialBox>
           <InicialBox></InicialBox>
           <InicialBox></InicialBox>
         </div>
