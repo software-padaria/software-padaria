@@ -11,19 +11,41 @@
         </div>
 
         <form class="flex flex-col items-center gap-24">
-          <input type="text" placeholder="CPNJ" class="border-b-black border-b w-96 pl-4 pb-2" />
-          <input type="text" placeholder="Email" class="border-b-black border-b w-96 pl-4 pb-2" />
-          <input
-            type="text"
-            placeholder="Password"
-            class="border-b-black border-b w-96 pl-4 pb-2"
-          />
-          <div class="options flex flex-row items-center gap-40 p-1">
-            <div class="rememberMe flex flex-row gap-2">
-              <input type="checkbox" id="remember" class="checkboxPassword" />
-              <label for="remember" class="text-xs text-zinc-400">Remember Me</label>
+          <div class="flex flex-row gap-10 items-center pl-2">
+            <div class="flex flex-col gap-14">
+              <input
+                type="text"
+                placeholder="Name"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
+              <input
+                type="text"
+                placeholder="Email"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
+              <input
+                type="text"
+                placeholder="Password"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
             </div>
-            <div class="forgotPassword text-xs font-semibold">Forgot Password?</div>
+            <div class="flex flex-col gap-14">
+              <input
+                type="text"
+                placeholder="CPNJ"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
+              <input
+                type="text"
+                placeholder="Number (optional)"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
+              <input
+                type="text"
+                placeholder="Confirm Password"
+                class="border-b-black border-b w-60 pl-4 pb-2"
+              />
+            </div>
           </div>
           <div class="orLines flex flex-row items-center gap-2">
             <div class="line"></div>
@@ -46,13 +68,13 @@
           </div>
           <div class="loginBtn flex justify-end w-full mr-60">
             <button class="bg-black hover:bg-zinc-800 text-white font-bold py-3 px-8 rounded">
-              Log In
+              Sign Up
             </button>
           </div>
           <span class="text-zinc-400"
-            >Not Registered Yet?
-            <router-link to="/cadastro" class="text-black font-semibold"
-              >Create an account</router-link
+            >Already have a register?
+            <router-link to="/login" class="text-black font-semibold"
+              >Enter your Account</router-link
             ></span
           >
         </form>
