@@ -95,8 +95,8 @@ onUnmounted(() => {
             <!--perfil-->
             <img src="../assets/icons8-usuário-60.png" class="bg-white rounded w-13" alt="" />
             <div class="flex flex-col ml-3 text-lg">
-              <p>Pedro</p>
-              <p>123456789</p>
+              <router-link to="/login">Pedro</router-link>
+              <router-link to="/login">123456789</router-link>
             </div>
           </div>
         </div>
