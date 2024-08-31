@@ -34,7 +34,7 @@ const handleItemClick = () => {
         </li>
         <li class="mb-6 font-bold flex flex-col items-center">
           <img src="../assets/icons8-pago-100.png" width="60" height="60" alt="">
-          <router-link to="/vendas" class="hover:text-color5" @click.native="handleItemClick">VENDAS</router-link>
+          <router-link to="/vendas1" class="hover:text-color5" @click.native="handleItemClick">VENDAS</router-link>
         </li>
         <li class="mb-6 font-bold flex flex-col items-center ">
           <img src="../assets/icons8-colar-100.png" width="60" height="60" alt="">
