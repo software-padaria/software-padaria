@@ -13,7 +13,12 @@ const router = createRouter({
       path:'/vendas2',
       name:'vendas2',
       component: () => import('../views/vendas2view.vue')
-    }
+    },
+    {
+      path: '/vendas3',
+      name: 'vendas3',
+      component: () => import('../views/vendas3view.vue')
+    },
   ]
 })
 

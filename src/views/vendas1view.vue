@@ -1,28 +1,44 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import Menu from '../assets/components/menuPag.vue'
 </script>
-<template>
-  <div class="bg-gray-500 w-full h-screen">
-    <div class="w-full h-[10vh] bg-black">
-      <Menu class="h-full w-full" />
-    </div>
-    <div class="flex justify-center items-center h-[90vh] w-full">
-      <div class="flex flex-col w-[70%] h-[90%] bg-gray-400 rounded-xl">
-        <div class="w-full h-[40%]">
 
+<template>
+  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-800">
+    <div class="container mx-auto px-4 py-8">
+      <Menu></Menu>
+
+      <div class="w-full rounded-lg p-8">
+       
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            class="w-24 h-24 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 0112 0v1z"
+            ></path>
+          </svg>
+          <h2 class="text-2xl font-bold mt-4 text-red-600">CAIXA FECHADO</h2>
+          <p class="text-sm text-gray-400 mt-2">Abra o caixa para realizar suas vendas</p>
         </div>
-        <div class="w-full h-[30%] gap-2">
-          <div class="flex gap-2 justify-center w-full h-[50%]">
-            <span class="text-6xl">Caixa</span>
-            <span class="text-6xl text-red-800">Fechado</span>
+        <div class="mt-8 w-full flex justify-center flex-col items-center vg">
+          <div class="bg-white w-duzz rounded-lg shadow-lg p-4 text-center">
+            <p class="text-sm text-gray-700 font-bold">DISPONÍVEL EM CAIXA</p>
+            <h3 class="text-3xl font-bold text-green-500 mt-2">R$0,00</h3>
+
+            <RouterLink
+              to="/vendas2"
+              class="w-full bg-green-500 hover:bg-green-700 text-white justify-center flex font-bold py-2 px-4 rounded mt-4"
+              >ABRIR CAIXA</RouterLink
+            >
           </div>
-          <div class="flex h-[50%] w-full border-t-2 justify-center items-center">
-            <span class="text-4xl">Abra o caixa para finalizar suas vendas</span>
-          </div>
-        </div>
-        <div class="h-[30%] w-full flex flex-col justify-center items-center gap-4">
-          <button class="bg-red-600 w-96 h-20 rounded-md ">Abrir Caixa</button>
-          <button class="bg-gray-500 w-96 h-20 rounded-md">Fechar Caixa</button>
         </div>
       </div>
     </div>
