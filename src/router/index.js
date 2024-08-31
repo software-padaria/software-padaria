@@ -19,7 +19,22 @@ const router = createRouter({
       name: 'vendas3',
       component: () => import('../views/vendas3view.vue')
     },
-  ]
+    {
+      path: '/',
+      name: 'home',
+      component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/cadastro',
+      name: 'cadastro',
+      component: () => import('../views/CadastroView.vue')
+    }
+]
 })
 
 export default router
