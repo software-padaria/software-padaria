@@ -4,7 +4,12 @@ export default {
 ],
   theme: {
     extend: {
-      
+      width:{
+        'duzz': '200px'
+      },
+      height:{
+        "10vh": "10vh"
+      }
     },
   },
   plugins: [],
