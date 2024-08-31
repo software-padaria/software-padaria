@@ -7,7 +7,6 @@
         <div class="flex flex-row p-10">
           <h1 class="text-4xl font-bold text-black">Lay</h1>
           <h1 class="text-4xl font-bold text-gray-400">UP</h1>
-          <img src="../assets/icons8-layers-48.png" width="43" alt="" />
         </div>
 
         <form class="flex flex-col items-center gap-24">
