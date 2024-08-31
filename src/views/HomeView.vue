@@ -106,7 +106,7 @@ onUnmounted(() => {
 
   <body>
     <div class="bg-color4 w-full h-screen flex flex-col">
-      <div class="w-full h-48 flex flex-col justify-center pl-60">
+      <div class="w-full h-48 flex flex-col justify-center pl-96">
         <div class="flex">
           <h1 class="text-5xl text-white font-bold">SANTO PÃO - PADARIA</h1>
           <svg
@@ -147,8 +147,8 @@ onUnmounted(() => {
       <div class="flex justify-center items-center ">
         <div class="flex ">
           <InicialBox title="VENDAS"></InicialBox>
-          <InicialBox></InicialBox>
-          <InicialBox></InicialBox>
+          <InicialBox title="ESTOQUE"></InicialBox>
+          <InicialBox title="PEDIDOS"></InicialBox>
         </div>
       </div>
     
