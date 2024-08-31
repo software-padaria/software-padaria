@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import RegistroVendas from './views/RegistroVendas.vue';
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
