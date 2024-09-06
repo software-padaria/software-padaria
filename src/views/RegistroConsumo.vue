@@ -48,7 +48,7 @@ const toggleMenu = () => {
       <div class="container mx-auto mt-10">
         <div class="grid grid-cols-2 gap-10">
           <div class="bg-color4 rounded-lg p-5">
-            <h2 class="text-4xl font-bold text-center mb-1">Entrada:</h2>
+            <h2 class="text-4xl font-bold text-center mb-1">Consumos:</h2>
             <table class="table-auto w-full text-center">
               <thead>
                 <tr>
@@ -98,7 +98,7 @@ const toggleMenu = () => {
             </table>
           </div>
           <div class="bg-color4 rounded-lg p-5">
-            <h2 class="text-4xl font-bold text-center mb-1">Saída:</h2>
+            <h2 class="text-4xl font-bold text-center mb-1">Reposições:</h2>
             <table class="table-auto w-full text-center">
               <thead>
                 <tr>
