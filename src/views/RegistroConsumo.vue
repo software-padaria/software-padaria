@@ -45,6 +45,11 @@ const toggleMenu = () => {
           </nav>
         </div>
       </section>
+      <input
+          type="text"
+          placeholder="Search Register..."
+          class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg"
+        />
       <div class="container mx-auto mt-10">
         <div class="grid grid-cols-2 gap-10">
           <div class="bg-color4 rounded-lg p-5">

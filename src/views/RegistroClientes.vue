@@ -21,7 +21,7 @@ const toggleMenu = () => {
               @click="toggleMenu"
               class="block py-3 px-5 text-black text-xl font-semibold cursor-pointer"
             >
-              <span class="inline-block px-0">REGISTRO DE CONSUMO</span>
+              <span class="inline-block px-0">REGISTRO DE CLIENTES</span>
               <span class="float-right inline-block">+</span>
             </label>
             <ul
@@ -37,14 +37,19 @@ const toggleMenu = () => {
                 <router-link to="/" class="text-black">REGISTRO DE VENDAS</router-link>
               </li>
               <li class="py-2">
-                <router-link to="/RegistroClientes" class="text-black"
-                  >REGISTRO DE CLIENTES</router-link
+                <router-link to="/RegistroConsumo" class="text-black"
+                  >REGISTRO DE CONSUMO</router-link
                 >
               </li>
             </ul>
           </nav>
         </div>
       </section>
+      <input
+          type="text"
+          placeholder="Search Register..."
+          class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg"
+        />
       <div class="container mx-auto mt-10">
         <div class="grid grid-cols-2 gap-10">
           <div class="bg-color4 rounded-lg p-5">

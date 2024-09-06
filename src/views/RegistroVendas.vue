@@ -7,6 +7,8 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }   
+
+
 </script>
 
 <template>
@@ -17,42 +19,28 @@ const toggleMenu = () => {
           <h1 class="text-6xl mb-2">All in One</h1>
           <p class="text-2xl">Todos seus relatórios em um lugar só</p>
           <nav class="relative bg-white mt-10 mx-auto w-full max-w-lg rounded">
-            <label
-              @click="toggleMenu"
-              class="block py-3 px-5 text-black text-xl font-semibold cursor-pointer"
-            >
+            <label @click="toggleMenu" class="block py-3 px-5 text-black text-xl font-semibold cursor-pointer">
               <span class="inline-block px-0">REGISTRO DE VENDAS</span>
               <span class="float-right inline-block">+</span>
             </label>
-            <ul
-              :class="{ 'h-[120px] translate-y-[-3px]': isMenuOpen, 'h-0': !isMenuOpen }"
-              class="bg-white absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none"
-            >
+            <ul :class="{ 'h-[120px] translate-y-[-3px]': isMenuOpen, 'h-0': !isMenuOpen }"
+              class="bg-white absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none">
               <li class="py-2">
-                <router-link to="/RegistroEstoque" class="text-black"
-                  >REGISTRO DE ESTOQUE</router-link
-                >
+                <router-link to="/RegistroEstoque" class="text-black">REGISTRO DE ESTOQUE</router-link>
               </li>
               <li class="py-2">
-                <router-link to="/RegistroConsumo" class="text-black"
-                  >REGISTRO DE CONSUMO</router-link
-                >
+                <router-link to="/RegistroConsumo" class="text-black">REGISTRO DE CONSUMO</router-link>
               </li>
               <li class="py-2">
-                <router-link to="/RegistroClientes" class="text-black"
-                  >REGISTRO DE CLIENTES</router-link
-                >
+                <router-link to="/RegistroClientes" class="text-black">REGISTRO DE CLIENTES</router-link>
               </li>
             </ul>
           </nav>
         </div>
       </section>
       <section class="bg-color4 rounded-lg mx-auto max-w-screen-2xl">
-        <input
-          type="text"
-          placeholder="Search Register..."
-          class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg"
-        />
+        <input type="text" placeholder="Search Register..."
+          class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg" />
         <table class="w-fit border-collapse mx-auto text-2xl">
           <thead>
             <tr>
@@ -111,6 +99,8 @@ const toggleMenu = () => {
               </td>
               <td class="px-5 py-0 border text-center">Lucas</td>
               <td class="px-5 py-0 border text-center">R$41,50</td>
+              <td class="px-5 py-0 border text-center"><button @click="showCode = !showCode">
+                  . . .</button></td>
             </tr>
           </tbody>
           <tbody>
@@ -265,3 +255,5 @@ const toggleMenu = () => {
     </main>
   </div>
 </template>
+
+
