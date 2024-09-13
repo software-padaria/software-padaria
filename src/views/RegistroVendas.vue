@@ -150,6 +150,8 @@ const toggleMenu = () => {
               </td>
               <td class="px-5 py-0 border text-center">João Guilherme</td>
               <td class="px-5 py-0 border text-center">R$41,50</td>
+              <td class="px-5 py-0 border text-center"><button @click="showCode = !showCode">
+                  . . .</button></td>
             </tr>
           </tbody>
           <tbody>
@@ -199,6 +201,8 @@ const toggleMenu = () => {
               </td>
               <td class="px-5 py-0 border text-center">Lucas</td>
               <td class="px-5 py-0 border text-center">R$41,50</td>
+              <td class="px-5 py-0 border text-center"><button @click="showCode = !showCode">
+                  . . .</button></td>
             </tr>
           </tbody>
           <tbody>
@@ -248,6 +252,8 @@ const toggleMenu = () => {
               </td>
               <td class="px-5 py-0 border text-center">João Guilherme</td>
               <td class="px-5 py-0 border text-center">R$41,50</td>
+              <td class="px-5 py-0 border text-center"><button @click="showCode = !showCode">
+                  . . .</button></td>
             </tr>
           </tbody>
         </table>

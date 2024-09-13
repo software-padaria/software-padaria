@@ -48,9 +48,9 @@ const toggleMenu = () => {
       <input
           type="text"
           placeholder="Search Register..."
-          class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg"
+          class="mx-auto w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg"
         />
-      <div class="container mx-auto mt-10">
+      <div class="container mx-auto">
         <div class="grid grid-cols-2 gap-10">
           <div class="bg-color4 rounded-lg p-5">
             <h2 class="text-4xl font-bold text-center mb-1">Consumos:</h2>
