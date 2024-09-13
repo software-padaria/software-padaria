@@ -6,9 +6,7 @@ const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
-}   
-
-
+} 
 </script>
 
 <template>

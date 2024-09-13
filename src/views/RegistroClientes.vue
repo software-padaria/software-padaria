@@ -16,12 +16,12 @@ const toggleMenu = () => {
         <div class="absolute bottom-5 left-5 text-white">
           <h1 class="text-6xl mb-2">All in One</h1>
           <p class="text-2xl">Todos seus relatórios em um lugar só</p>
-          <nav class="relative bg-white mt-10 mx-auto w-full max-w-lg">
+          <nav class="relative bg-white mt-10 mx-auto w-full max-w-lg rounded">
             <label @click="toggleMenu" class="block py-3 px-5 text-black text-xl font-semibold cursor-pointer">
               <span class="inline-block px-0">REGISTRO DE CLIENTES</span>
               <span class="float-right inline-block">+</span>
             </label>
-            <ul :class="{ 'h-[120px]': isMenuOpen, 'h-0': !isMenuOpen }"
+            <ul :class="{ 'h-[120px] translate-y-[-3px]': isMenuOpen, 'h-0': !isMenuOpen }"
               class="bg-white absolute w-full overflow-hidden text-center transition-all duration-400 ease-in-out list-none">
               <li class="py-2">
                 <router-link to="/RegistroEstoque" class="text-black">REGISTRO DE ESTOQUE</router-link>
