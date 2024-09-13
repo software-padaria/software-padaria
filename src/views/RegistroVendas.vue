@@ -36,7 +36,7 @@ const toggleMenu = () => {
           </nav>
         </div>
       </section>
-      <section class="bg-color4 rounded-lg mx-auto max-w-screen-2xl">
+      <section class="rounded-lg mx-auto max-w-screen-2xl">
         <input type="text" placeholder="Search Register..."
           class="mx-auto mb-2 w-full max-w-xs bg-white border-none rounded-lg p-3 text-black text-lg" />
         <table class="w-fit border-collapse mx-auto text-2xl">
@@ -51,7 +51,7 @@ const toggleMenu = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="bg-color3">
               <td class="border text-center">16/02/2024</td>
               <td class="border text-center">16:24</td>
               <td class="border text-center">William</td>
@@ -102,7 +102,7 @@ const toggleMenu = () => {
             </tr>
           </tbody>
           <tbody>
-            <tr>
+            <tr class="bg-color3">
               <td class="px-5 py-0 border text-center">16/02/2024</td>
               <td class="px-5 py-0 border text-center">19:00</td>
               <td class="px-5 py-0 border text-center">Matheus</td>
@@ -153,7 +153,7 @@ const toggleMenu = () => {
             </tr>
           </tbody>
           <tbody>
-            <tr>
+            <tr class="bg-color3">
               <td class="px-5 py-0 border text-center">16/02/2024</td>
               <td class="px-5 py-0 border text-center">19:45</td>
               <td class="px-5 py-0 border text-center">Leila</td>
@@ -204,7 +204,7 @@ const toggleMenu = () => {
             </tr>
           </tbody>
           <tbody>
-            <tr>
+            <tr class="bg-color3">
               <td class="px-5 py-0 border text-center">16/02/2024</td>
               <td class="px-5 py-0 border text-center">20:06</td>
               <td class="px-5 py-0 border text-center">Luan</td>
