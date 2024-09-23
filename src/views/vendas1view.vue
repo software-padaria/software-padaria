@@ -34,7 +34,7 @@ onUnmounted(() => {
   <div class="flex" ref="appContainer">
     <SideBar :isOpen="isSidebarOpen" @close="closeSidebar" ref="sidebarRef" />
     <div class="flex-1">
-      <header class="bg-color1 shadow">
+      <header class="bg-color1 shadow fixed w-screen">
         <div class="container py-8 flex items-center">
           <button class="text-white text-lg mx-16" @click="toggleSidebar">
             <svg
@@ -100,7 +100,7 @@ onUnmounted(() => {
           </div>
         </div>
       </header>
-      <div class="bg-color4 w-full h-screen flex flex-col">
+      <div class="bg-color4 w-full h-screen flex flex-col p-36">
         <div class="flex flex-col items-center justify-center">
           <img
             class="mt-40"

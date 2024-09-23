@@ -35,15 +35,13 @@ onUnmounted(() => {
  document.removeEventListener('click', handleClickOutside);
 });
 
-
 </script>
 
 <template>
-
-<div class="flex fixed" ref="appContainer" >
+<div class="flex" ref="appContainer" >
     <SideBar :isOpen="isSidebarOpen" @close="closeSidebar" ref="sidebarRef" />
     <div class="flex-1">
-      <header class="bg-color1 shadow">
+      <header class="bg-color1 shadow fixed w-screen ">
         <div class="container py-8 flex items-center">
           <button class="text-white text-lg mx-16" @click="toggleSidebar">
             <svg
@@ -109,11 +107,11 @@ onUnmounted(() => {
           </div>
         </div>
       </header>
-      <div class="bg-color4 w-full h-screen flex flex-col rounded-lg p-8">
+      <div class="bg-color4 w-full h-screen flex flex-col rounded-lg p-36">
         <div class="flex justify-end">
-          <button class="bg-red-500 absolute hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <RouterLink to="/vendas1" class="bg-red-500 absolute hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
             Cancelar Operação
-          </button>
+          </RouterLink>
         </div>
         <div class="flex flex-col items-center justify-center">
             <img
