@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'
@@ -21,37 +20,11 @@ export default {
       'color2': '#8C8C8C',
       'color5': '#262626'
     }
-  },
-    plugins: [],
-}
-=======
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      width: {
-        duzz: '200px'
-      },
-      height: {
-        '10vh': '10vh'
-      },
-      backgroundColor: {
-        color1: '#0D0D0D',
-        color3: '#8C8C8C',
-        color4: '#262626',
-        color6: '#D9D9D9'
-      },
-      textColor: {
-        color2: '#8C8C8C',
-        color5: '#262626'
-      },
-      borderRadius:{
+    borderRadius:{
         'rounded-left' : '5px 0px 0px 5px',
         'rounded-right' : '0px 5px 5px 0px',
       }
-    },
-    plugins: []
   },
+    plugins: [],
+
 }
->>>>>>> Stashed changes
