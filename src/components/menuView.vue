@@ -1,48 +1,39 @@
 <script setup>
-import { RouterLink } from 'vue-router'
 import { ref,onMounted, onUnmounted} from 'vue';
 import SideBar from '@/components/SideBar.vue';
-
 
 const isSidebarOpen = ref(false);
 const sidebarRef = ref(null);
 const appContainer = ref(null);
 
-
 const toggleSidebar = () => {
- isSidebarOpen.value = !isSidebarOpen.value;
+  isSidebarOpen.value = !isSidebarOpen.value;
 };
-
 
 const closeSidebar = () => {
- isSidebarOpen.value = false;
+  isSidebarOpen.value = false;
 };
-
 
 const handleClickOutside = (event) => {
- if (appContainer.value && !appContainer.value.contains(event.target) && isSidebarOpen.value) {
-   closeSidebar();
- }
+  if (appContainer.value && !appContainer.value.contains(event.target) && isSidebarOpen.value) {
+    closeSidebar();
+  }
 };
 
-
 onMounted(() => {
- document.addEventListener('click', handleClickOutside);
+  document.addEventListener('click', handleClickOutside);
 });
 
-
 onUnmounted(() => {
- document.removeEventListener('click', handleClickOutside);
+  document.removeEventListener('click', handleClickOutside);
 });
 
 </script>
-
 <template>
-<div class="flex" ref="appContainer" >
     <SideBar :isOpen="isSidebarOpen" @close="closeSidebar" ref="sidebarRef" />
-    <div class="flex-1">
-      <header class="bg-color1 shadow fixed w-screen ">
-        <div class="container py-8 flex items-center">
+    <div class="w-full">
+      <header class="bg-color1">
+        <div class="py-8 flex items-center">
           <button class="text-white text-lg mx-16" @click="toggleSidebar">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,14 +65,14 @@ onUnmounted(() => {
               </g>
             </svg>
           </button>
-          <h1 class="text-4xl font-bold text-white ml-8 mr-0.5">Lay</h1>
+          <h1 class="text-4xl font-bold text-white ">Lay</h1>
           <h1 class="text-4xl font-bold text-color2">UP</h1>
           <img src="../assets/icons8-layers-48.png" width="43" alt="" />
-          <div class="relative flex flex-row w-full">
+          <div class="flex w-[70%]">
             <input
               type="text"
               placeholder="SEARCH FOR..."
-              class="bg-white text-color2 font-bold border border-color2 rounded-sm py-2 px-4 ml-20 w-10/12 focus:outline-none focus:text-black"
+              class="bg-white text-color2 font-bold border border-color2 rounded-sm py-2 px-4 w-full focus:outline-none focus:text-black"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,47 +88,15 @@ onUnmounted(() => {
               ></path>
             </svg>
           </div>
-          <div class="text-white flex flex-row">
+          <div class="text-white flex items-center gap-2 w-[10%] ml-10 flex-row">
             <!--perfil-->
-            <img src="../assets/icons8-usuário-60.png" class="bg-white rounded w-13" alt="" />
-            <div class="flex flex-col ml-3 text-lg">
-              <router-link to="/login">Pedro</router-link>
-              <router-link to="/login">123456789</router-link>
+            <img src="../../assets/icons8-usuário-do-bloco-de-notas-100.png" class="bg-white rounded h-12" alt="" />
+            <div class="flex flex-col text-lg">
+              <p>Pedro</p>
+              <p>123456789</p>
             </div>
           </div>
         </div>
       </header>
-      <div class="bg-color4 w-full h-screen flex flex-col rounded-lg p-36">
-        <div class="flex justify-end">
-          <RouterLink to="/vendas1" class="bg-red-500 absolute hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-            Cancelar Operação
-          </RouterLink>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <img
-            class="mt-40"
-            width="100"
-            height="100"
-            src="../assets/imagens/icons8-caixa-registradora-100.png"
-            alt="cash-register"
-          />
-
-          <h2 class="text-2xl font-bold text-green-500 mt-4">ABERTURA DE CAIXA</h2>
-          <p class="text-sm text-gray-400 mt-2">Informe os valores para abrir o caixa</p>
-        </div>
-        <div class="mt-8 w-full flex justify-center flex-col items-center vg">
-          <div class="bg-white w-duzz rounded-lg shadow-lg p-4 text-center">
-            <p class="text-sm text-gray-700 font-bold">DISPONÍVEL EM CAIXA</p>
-            <h3 class="text-3xl font-bold text-green-500 mt-2">R$0,00</h3>
-
-            <RouterLink to="/vendas3"
-              class="w-full bg-green-500 hover:bg-green-700 text-white justify-center flex font-bold py-2 px-4 rounded mt-4"
-              >ABRIR CAIXA</RouterLink
-            >
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
- 
 </template>

@@ -20,7 +20,11 @@ export default {
       'color2': '#8C8C8C',
       'color5': '#262626'
     }
+    borderRadius:{
+        'rounded-left' : '5px 0px 0px 5px',
+        'rounded-right' : '0px 5px 5px 0px',
+      }
   },
     plugins: [],
-}
+
 }
