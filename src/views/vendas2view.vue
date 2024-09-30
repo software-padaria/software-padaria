@@ -118,7 +118,7 @@ onUnmounted(() => {
             class="mt-40"
             width="100"
             height="100"
-            src="/home/lucas.amaya/Documentos/software-padaria/src/assets/imagens/icons8-caixa-registradora-100.png"
+            src="../assets/imagens/icons8-caixa-registradora-100.png"
             alt="cash-register"
           />
 

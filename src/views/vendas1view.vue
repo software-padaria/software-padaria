@@ -106,7 +106,7 @@ onUnmounted(() => {
             class="mt-40"
             width="100"
             height="100"
-            src="/home/lucas.amaya/Documentos/software-padaria/src/assets/imagens/icons8-caixa-registradora-100.png"
+            src="../assets/imagens/icons8-caixa-registradora-100.png"
             alt="cash-register"
           />
           <h2 class="text-2xl font-bold mt-4 text-red-600">CAIXA FECHADO</h2>
